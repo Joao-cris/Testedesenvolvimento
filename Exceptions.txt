@@ -2,4 +2,4 @@ AS excepctions deste projetos não foram tratadas de maneira mas estilizadas, as
 
 os tratamentos de erros no códigos serão tratados para próximas versões.
 
-pois o mais importante é que os todos os requisitos de sistema ate amo momento estão todas actualizadas!!!
+pois o mais importante é que os todos os requisitos de sistema ate ao momento estão todas actualizadas!!!
