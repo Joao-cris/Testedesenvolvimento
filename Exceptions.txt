@@ -1,0 +1,3 @@
+AS excepctions deste projetos não foram tratadas de maneira mas estilizadas, as exceptions deste projecto mostram mensagem personalizadas criadas por me de acordo as informações especificas principalmente na inserção de dados das datas. não houve estilização ideal para redicionar para uma view mas estilizada criando assim uma experiência agradável ao usuários!
+
+os tratamentos de erros no códigos serão tratados para próximas versões.
