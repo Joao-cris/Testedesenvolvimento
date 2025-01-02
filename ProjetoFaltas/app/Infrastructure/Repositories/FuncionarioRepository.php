@@ -20,6 +20,8 @@ class FuncionarioRepository implements FuncionarioRepositoryInterface
         if (isset($data['senha'])) {
             $data['senha'] = Hash::make($data['senha']);
         }
+
+
         return Funcionario::create($data);
     }
 
@@ -58,6 +60,11 @@ class FuncionarioRepository implements FuncionarioRepositoryInterface
     {
         $funcionario = Funcionario::findOrFail($id);
 
+
+         // Hash da senha antes de salvar
+         if (isset($data['senha'])) {
+            $data['senha'] = Hash::make($data['senha']);
+        }
         $funcionario->update($data);
 
         return $funcionario;
@@ -182,8 +189,8 @@ else {
     $funcionario = Funcionario::where('email', $dadoslogin->email)->first();
 
     // Verifica se o funcionário existe
-    if (!$funcionario || !Hash::check($dadoslogin->senha, $funcionario->senha)) {
-        return redirect()->route('login.form')->with('error', 'Email ou senha incorretos');
+   if (!$funcionario || !Hash::check($dadoslogin->senha, $funcionario->senha)) {
+       return redirect()->route('login.form')->with('error', 'Email ou senha incorretos');
     }
 
 

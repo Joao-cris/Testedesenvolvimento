@@ -99,7 +99,13 @@
                 <!-- Campo para Upload de Arquivo -->
                 <div class="form-group mb-3">
                         <label for="foto">Adicionar Foto:</label>
-                        <input type="file" name="foto" class="form-control" required>
+                        <input type="file" name="foto" class="form-control">
+                    </div>
+
+
+                      <div class="form-group mb-3">
+                        <label for="foto">Editar Senha:</label>
+                        <input type="text" name="senha" class="form-control">
                     </div>
 
                 <button type="submit" class="btn btn-success w-100">Atualizar Funcionário</button>
